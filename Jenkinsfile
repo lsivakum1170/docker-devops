@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Building image') {
       steps{
-        git url: 'https://github.com/lsivakum1170/docker-devops'  
+        git url: 'https://github.com/lsivakumgithub/docker-devops'  
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
       }
